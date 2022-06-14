@@ -5,6 +5,9 @@ Nesse curso é ensinado como contribuir com projetos de código aberto
 
 Link para o curso [Python Pro](https://pythonpro.com.br/)
 
+[![Updates](https://pyup.io/repos/github/gustavossandrin/libpythonproo/shield.svg)](https://pyup.io/repos/github/gustavossandrin/libpythonproo/)
+[![Python 3](https://pyup.io/repos/github/gustavossandrin/libpythonproo/python-3-shield.svg)](https://pyup.io/repos/github/gustavossandrin/libpythonproo/)
+
 Suportado a versão 3 de python
 
 para instalar:

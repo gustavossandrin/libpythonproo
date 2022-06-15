@@ -75,7 +75,7 @@ def find_package_data(
                         break
                 if bad_name:
                     continue
-                if (os.path.isfile(os.path.join(fn, "__init__.py"))
+                if (os.path.isfile(os.path.join(fn, "libpythonpro2/__init__.py"))
                         and not prefix):
                     if not package:
                         new_package = name
@@ -101,12 +101,12 @@ def find_package_data(
     return out
 
 
-PACKAGE = "libpythonproo"
-NAME = PACKAGE
+PACKAGE = "libpythonpro2"
+NAME = "lib_python_pro_gs"
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
-AUTHOR = "Gustavo Sandrin Dattein"
+AUTHOR = "gustavo sandrin"
 AUTHOR_EMAIL = "gustavosandrindattein123@gmail.com"
-URL = "https://github.com/gustavossandrin/libpythonproo"
+URL = "https://github.com/gustavossandrin/libpythonpro1"
 VERSION = __import__(PACKAGE).__version__
 
 setup(
@@ -117,7 +117,7 @@ setup(
     long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
-    license=read('LICENSE'),
+    license="GNU AFFERO GENERAL PUBLIC LICENSE",
     url=URL,
     packages=find_packages(exclude=["tests.*", "tests"]),
     package_data=find_package_data(PACKAGE, only_in_packages=False),
@@ -128,7 +128,7 @@ setup(
         "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.9.7",
+        "Programming Language :: Python :: 3.9",
         "Framework :: Pytest",
     ],
     install_requires=[

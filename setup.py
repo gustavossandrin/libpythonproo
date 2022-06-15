@@ -101,12 +101,12 @@ def find_package_data(
     return out
 
 
-PACKAGE = "libpythonpro2"
-NAME = "lib_python_pro_gs"
+PACKAGE = "libpythonproo"
+NAME = "libpythonproo"
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
 AUTHOR = "gustavo sandrin"
 AUTHOR_EMAIL = "gustavosandrindattein123@gmail.com"
-URL = "https://github.com/gustavossandrin/libpythonpro1"
+URL = "https://github.com/gustavossandrin/libpythonproo"
 VERSION = __import__(PACKAGE).__version__
 
 setup(

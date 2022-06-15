@@ -16,10 +16,15 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements-dev.txt
+        pip install -r requirements-dev.txt codecov
     - name: Verificar a qualidade do código com Flake8
       run: |
         flake8
     - name: Rodar os testes no GitHubActions
       run: |
-        pytest libpythonproo
+        pytest libpythonproo --cov=libpythonproo
+    - name: Relatório Coverage
+      env:
+        CODECOV_TOKEN: '68639095-9ab1-4c02-9330-fec1a03196fe'
+      run: |
+        codecov

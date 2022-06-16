@@ -4,7 +4,7 @@ from libpythonproo.spam.db import Conexao
 from libpythonproo.spam.modelos import Usuario
 
 
-@pytest.fixture()
+@pytest.fixture(scope='session')
 def conexao():
     # setup
     conexao_obj = Conexao()
